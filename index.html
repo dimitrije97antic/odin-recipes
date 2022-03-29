@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Odin Recipes</title>
-</head>
-<body>
-    <h1 style="color:crimson;">Odin Recipes</h1>
-    <h2>Favorite recipes:</h2>
-    <ul>
-    <li><a href="./recipes/lasagna.html">Brenda's Lasagna</a></li>
-    <li><a href="./recipes/pancakes.html">Pancakes</a></li>
-    <li><a href="./recipes/hamnegg.html">Ham and Egg Fritatta</a></li>
-    </ul>
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="index.html">odin recipes</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1>Favorite recipes</h1>
+      <p>
+        &ldquo; Part of the secret of success is to
+        <span> eat what you like </span> and let the food fight it out
+        inside.&rdquo;
+      </p>
+      <div class="hero-main">
+        <div class="card">
+          <img src="/images/pexels-anna-guerrero-4078163.jpg" alt="lasagna" />
+          <h2>Brenda's Lasagna</h2>
+          <p>
+            This is faster and a less expensive lasagna<a
+              href="/recipes/lasagna.html"
+              >...see more</a
+            >
+          </p>
+          <div class="info">
+            <div class="details">15m</div>
+            <div class="details">Easy</div>
+            <div class="details">4 person</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/pexels-solodsha-9009494.jpg" alt="hamnegg" />
+          <h2>Ham'n'Egg Frittata</h2>
+          <p>
+            This is faster and a less expensive lasagna<a
+              href="/recipes/hamnegg.html"
+              >...see more</a
+            >
+          </p>
+          <div class="info">
+            <div class="time">45m</div>
+            <div class="dificulty"></div>
+            <div class="count"></div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/pancakes-g7dc291f91_1920.jpg" alt="pancakes" />
+          <h2>Brenda's Lasagna</h2>
+          <p>
+            These are very light and tender pancakes<a
+              href="/recipes/pancakes.html"
+              >...see more</a
+            >
+          </p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="./recipes/lasagna.html">Brenda's Lasagna</a></li>
+        <li><a href="./recipes/pancakes.html">Pancakes</a></li>
+        <li><a href="./recipes/hamnegg.html">Ham and Egg Fritatta</a></li>
+      </ul>
+    </section>
+  </body>
 </html>
