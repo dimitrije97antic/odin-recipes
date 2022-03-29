@@ -24,7 +24,8 @@ span {
 
 img {
   width: 100%;
-  display: block;
+  object-fit: cover;
+  height: 150px;
 }
 
 ul {
@@ -86,7 +87,7 @@ header nav a:hover {
   position: relative;
   z-index: 1;
   /* height: 500px; */
-  background-color: #219ebc;
+  background-color: var(--clr-sky-blue);
 }
 
 .hero h1 {
@@ -126,45 +127,37 @@ header nav a:hover {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  transition: all 250ms;
+  transition: all 100ms ease-in;
+  align-self: normal;
 }
 
 .hero .card:hover {
   transform: translateY(-5px);
 }
 
+.hero .card .btn {
+  color: var(--clr-dark-blue);
+  display: inline-block;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--clr-sky-blue);
+  font-size: 15px;
+}
+.hero .card .btn:hover {
+  color: var(--clr-light-blue);
+}
+
 .hero .card h2 {
   font-size: 1.2rem;
   text-align: center;
   color: var(--clr-dark-blue);
+  margin-bottom: 10px;
 }
 
 .hero .card p {
   color: var(--clr-dark-blue);
   text-align: center;
   font-size: 1rem;
-}
-
-.card .info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 20px;
-}
-.card .info .details {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--clr-light-orange);
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  padding: 5px;
-  margin-top: 50px;
-}
-
-.hero .card .info .time {
-  border: 1px solid red;
 }
